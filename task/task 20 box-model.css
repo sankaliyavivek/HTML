@@ -1,0 +1,375 @@
+body *
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header
+{
+    background: white;
+}
+ul
+{
+    text-align: center;
+}
+li{
+    display: inline;
+    margin-right: 80px;
+    /* word-spacing: 2px; */
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.y
+{
+    display: flex;
+    background: palegoldenrod;
+}
+.x
+{
+    width: 33.33%;
+    text-align: center;
+}
+
+.nav
+{
+    height: 100px;
+    display: flex;
+    background: black;
+    padding: 30px;
+    align-items: center;
+    text-decoration: none;
+    
+}
+
+.nav a
+{
+    color: white;
+}
+
+.slider
+{
+    height: 300px;
+    text-align: center;
+    padding: 50px;
+    
+}
+.slider p{
+    padding: 15px;
+    word-spacing: 10px;
+    letter-spacing: 10px;
+}
+.slider button
+{
+    padding: 10px;
+} 
+.a
+{
+    height: 400px;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    
+}
+.a1
+{
+    /* gap: 30px; */
+    margin:20px 15px 5px 5px;
+    /* align-items: center; */
+    height: 300px;
+    width: 50%;
+}
+.a2
+{
+    height: 300px;
+    width: 50%;
+    margin: 20px 15px 5px 5px;
+}
+.sale
+{
+    height: 400px;
+    display: flex;
+}
+.s1,.s2
+{
+    height: 400px;
+    width: 50%;
+}
+.s3
+{
+    height: 250px;
+    width: 80%;
+    margin: 80px 0 0 0;
+}
+p
+{
+border: none;
+}
+.i1
+{
+    height: 134px;
+    width: 100%;
+    display: flex;
+}
+
+.cu,.ev,.aw
+{
+    height: 134px;
+    width: 33.33%;
+    padding: 20px;
+    text-align: center;
+    
+}
+.wh,.nw
+{
+height: 100px;
+background: black;
+color: white;
+text-align: center;
+line-height: 100px;
+/* word-spacing: 10px; */
+letter-spacing: 5px;
+}
+.main
+{
+    height: 500px;
+    display: flex;
+    padding: 45px;
+    gap: 20px;
+}
+.first
+{
+    height: 400px;
+    width: 30%;
+    margin-left: 230px;
+}
+.second
+{
+    height: 400px;
+    width: 30%;
+}
+.sc1,.sc2
+{
+    height: 190px;
+}
+.sc2
+{
+    margin-top: 20px;
+}
+
+.m
+{
+    height: 500px;
+    display: flex;
+}
+.m1,.m2
+{
+    width: 50%;
+}
+.m1 p,.m2 p
+{
+  text-align: center;
+  line-height: 500px;
+  word-spacing: 10px;
+  letter-spacing: 10px;
+  font-weight: bold;
+}
+.o2
+{
+    height: 850px;
+    padding: 30px;
+}
+.o3
+{
+    height: 800px;
+    width: 90%;
+    margin-left:60px ;
+    padding: 10px;
+}
+
+.o3 li
+{
+        margin-left: 130px;
+        /* margin-left: 60px; */
+        /* text-align: center; */
+}
+
+.o4,.oo4
+{
+    display: flex;
+    justify-content: space-evenly;
+    height: 360px;
+}
+.oo4
+{
+    margin-top: 20px;
+}
+.o5,.o6
+{
+    width: 20%;
+}
+.offer
+{
+    height: 600px;
+    padding: 250px;
+    text-align: center;
+    font-weight: bold;
+    word-spacing: 10px;
+    letter-spacing: 10px;
+}
+.offer button
+{
+    margin-top: 40px;
+    padding: 10px;
+}
+.effact
+{
+    height: 200px;
+    display: flex;
+    padding: 20px;
+}
+.e1
+{
+    height: 160px;
+    width: 25%;
+    padding: 20px;
+    padding-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+.s
+{
+   height: 80px;
+   width: 80px;
+}
+.z1
+{
+    
+   height: 80px;
+   width: 180px;
+   /* padding: 5px; */
+}
+.z1 p
+{
+    padding: 4px;
+}
+.black
+{
+    height: 600px;
+    padding: 40px;
+    /* display: flex; */
+}
+.b1
+{
+    height: 400px;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+
+}
+.b4
+{
+    height: 380px;
+    width: 25%;
+    /* display: flex; */
+}
+.b4 p
+{
+padding-top: 15px;
+}
+.d2
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.d3
+{
+    height: 50px;
+    width: 50px;
+}
+.coin
+{
+    height: 117px;
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+}
+.c1
+{
+  height: 80px;
+  width: 80px;
+  
+}
+.c2
+{
+    height: 80px;
+    width: 230px;
+}
+.c2 p{
+    padding-left: 20px;
+}
+.image
+{
+    height: 117px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.image1
+{
+    height: 90px;
+    width: 30%;
+}
+.footer
+{
+    height: 100px;
+    margin-top: 20px;
+    display: flex;
+}
+
+.foot
+{
+    width: 50%;
+    
+}
+
+.foot h1
+{
+    margin-top: 30px;
+}
+.foot input
+{
+    height: 40px;
+    width: 80%;
+    margin-top: 30px;
+    
+}
+
+.foot button
+{
+    width: 19%;
+    padding: 11px;
+    margin-left: 2px;
+}
+.last p
+{
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+
+

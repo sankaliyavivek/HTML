@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main
+        {
+            height: 400px;
+            width: 400px;
+            background: coral;
+            margin: 100px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .one
+        {
+            height: 0;
+            width: 0;
+            background: rgba(0,0,0,.75);
+
+        }
+        .main:hover .one
+        {
+            height: 400px;
+            width: 400px;
+            transition: .4s;
+            background: rgba(0,0,0,.0);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <div class="one">
+
+        </div>
+
+    </div>
+</body>
+</html>

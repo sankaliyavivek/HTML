@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <style>
+
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+
+
+        .x {
+            height: 100px;
+            background: black;
+            display: flex;
+        }
+        
+        li {
+            list-style-type: none;
+        }
+
+
+        a {
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            margin: 0 0 0 10px;
+            padding: 35px;
+            text-decoration: none;
+
+        }
+
+        .y 
+        {
+            height: 100px;
+            width: 180px;
+            background: #2fdab8;
+        }
+
+        .y
+        {
+            margin: 0 50px 100px 120px;
+            
+        }
+
+       .fa-shopping-cart
+       {
+           margin: 40px 50px 60px 78px;
+       }
+
+       .fa-caret-down
+       {
+            margin: 0px 20px;
+       }
+.x1{
+    position: relative;
+}
+
+.v{
+    position: absolute;
+    height: 300px;
+    width: 600px;
+    color: white;
+    display: flex;
+}
+.v1{
+    height: 300px;
+    width: 300px;
+    background: url(banner5.jpg);
+    background-size: 100% 100%;
+    position: relative;
+}
+.box1,.box2
+{
+    height: inherit;
+    width: inherit;
+    background-color: rgba(255, 255,255,.1);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+.box1
+{
+    transform: translate(-300px,300px);
+}
+.box2
+{
+    transform: translate(300px,-300px);
+}
+
+.v1:hover .box1
+{
+    transform: translate(0,0);
+    opacity: 1;
+}
+.v1:hover .box2
+{
+    transform: translate(0,0);
+    opacity: 1;
+}
+
+
+
+.v2 li,.v3 li
+{
+    padding: 10px 0px;
+    color: #616161;
+}
+
+
+
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="x">
+
+        <li>
+            <a href="">Home</a>
+        </li>
+
+        <li>
+            <a href="">About</a>
+        </li>
+
+        <li class="x1">
+            <a href="">Men's wear &#9662;</a>
+
+                <div class="v">
+
+                  <div class="v1">
+                    <div class="box1"></div>
+                    <div class="box2"></div>
+                  </div>
+
+                  <div class="v2">
+                    <ul>
+                        <li>Clothing</li>
+                        <li>Wallets</li>
+                        <li>Footwear</li>
+                        <li>Watches</li>
+                        <li>Accessories</li>
+                        <li>Bags</li>
+                        <li>Caps & Hats</li>
+                    </ul>
+                  </div>
+
+                  <div class="v3">
+                    <ul>
+                        <li>Jewellery</li>
+                        <li>Sunglasses</li>
+                        <li>Perfumes</li>
+                        <li>Beauty</li>
+                        <li>Shirts</li>
+                        <li>Sunglasses</li>
+                        <li>Swimwear</li>
+                    </ul>
+                  </div>
+
+              </div>
+
+            
+            
+        </li>
+
+        <li>
+            <a href="">Women's wear &#9662;</a>
+            
+        </li>
+
+        <li>
+            <a href="">Short codes &#9662;</a>
+            
+        </li>
+
+        <li>
+            <a href="">Contect</a>
+        </li>
+
+        <div class="y">
+            <i class="fa fa-shopping-cart"></i>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

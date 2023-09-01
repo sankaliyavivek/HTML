@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .nav
+        {
+            background: lightseagreen;
+            font-size: 30px;
+        }
+        .a1
+        {
+          display: inline; 
+          margin-left: 50px;
+        }
+        ul
+        {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        a
+        {
+            text-decoration: none;
+            margin-left: 30px;
+        }
+        a:hover
+        {
+            background: white;
+        }
+
+        .vivek
+        {
+            position: relative;
+        }
+
+        .y
+        {
+            position: absolute;
+            top: 250%;
+            left: 0;
+            opacity: 0;
+            transition: 1s;
+        }
+        .vivek:hover .y
+        {
+               opacity: 1;
+               top: 100%;
+        }
+          
+        .v1
+        {
+           position: relative;
+
+        }
+        .z
+        {
+            position: absolute;
+            left: 150px;
+            top: 0;
+            opacity: 0;
+        }
+        .v1:hover .z
+        {
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li class="a1"><a href="">Home</a></li>
+            <li class="a1"><a href="">About</a></li>
+            <li class="a1 vivek"><a href="">service</a>
+                <ul class="y">
+
+                    <li><a href="">Service1</a></li>
+                    <li class="v1"><a href="">Service2</a>
+
+                       <ul class="z">
+                        <li><a href="">service1</a></li>
+                        <li><a href="">service2</a></li>
+ 
+                       </ul>
+                    </li>
+
+                    <li><a href="">Service3</a></li>
+                    <li><a href="">Service4</a></li>
+
+
+                </ul>
+
+            </li>
+            
+            <li class="a1"><a href="">Contact</a></li>
+        </ul>
+
+    </div>
+</body>
+</html>

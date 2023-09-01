@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+    *{
+        box-sizing: border-box;
+    }
+
+    .main *
+    {
+      
+      border-radius: 50%;
+    }
+    .main
+    {
+        height: 200px;
+        width: 200px;
+        /* background: green; */
+        position: relative;
+        margin: 100px auto;
+        border-radius: 50%;
+    }
+      .m1
+      {
+        height: 200px;
+        width: 200px;
+        /* background: coral; */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border: 10px solid transparent;
+        border-top: 10px solid yellow ;
+        transform: translate(-50%,-50%);
+        animation: jaydeep 2s linear infinite;
+        
+
+      }
+      .m2
+      {
+        height: 150px;
+        width: 150px;
+        /* background: red; */
+        border: 10px solid transparent;
+        border-top: 10px solid cornflowerblue;
+        position: absolute;
+        top: 50%;
+        left: 50%;  
+        transform: translate(-50%,-50%);      
+        animation: jaydeep2 2s linear infinite;
+        
+      }
+      .m3
+      {
+        height: 100px;
+        width: 100px;
+        /* background: lightcoral; */
+        border: 10px solid transparent;
+        border-top: 10px solid blue;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%); 
+        animation: jaydeep 2s linear infinite;
+      }
+
+
+      @keyframes jaydeep
+      {
+        from{transform: translate(-50%,-50%) rotate(0deg);}
+        to{transform: translate(-50%,-50%) rotate(360deg);}
+      }
+        
+      @keyframes jaydeep2
+      {
+        from{transform: translate(-50%,-50%) rotate(360deg);}
+        to{transform: translate(-50%,-50%) rotate(0deg);}
+      }
+
+
+</style>
+
+
+
+</head>
+<body>
+    <div class="main">
+        <div class="m1"></div>
+        <div class="m2"></div>
+        <div class="m3"></div>
+        
+
+
+    </div>
+</body>
+</html>

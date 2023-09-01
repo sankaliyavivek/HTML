@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *
+    {
+        box-sizing: border-box;
+    }
+    body
+    {
+        margin: 0;
+        padding: 0;
+    }
+    .main
+    {
+        height: 650px;
+        position: relative;
+        background: black;
+    }
+    .a,.b,.c,.d,.e
+    {
+        border-radius: 50%;
+    }
+    .a 
+    {
+        height: 80px;
+        width: 80px;
+        margin-top: 40px;
+        position:absolute;
+        top: 5%;
+        left: 0;
+        background: blue;
+        margin: 10px 0 0 15px;
+        animation: vivek 2s linear infinite;
+        animation-direction: alternate;
+    }
+    .b
+    {
+        height: 80px;
+        width: 80px;
+        position:absolute;
+        top: 20%;
+        left: 2%;
+        margin: 30px 0 0 60px;
+        background: chocolate;
+        animation: jay 2s linear infinite;
+        animation-direction: alternate;
+    }
+    .c
+    {
+        height: 80px;
+        width: 80px;
+        position:absolute;
+        top: 40%;
+        left: 1%;
+        background: yellow;
+        margin: 60px 0 30px 50px;
+        animation: jaydeep 2s linear infinite;
+        animation-direction: alternate;
+        
+    }
+    /* .d
+    {
+      height: 90px;
+      width: 90px;
+      position:absolute;
+        top: 40%;
+        left: 2%;
+      background: green;
+      margin: 70px 0 40px 30px;
+    } */
+    .e
+    {
+        height: 50px;
+        width: 50px;
+        position:absolute;
+        top: 60%;
+        left: 2%;
+        background: red;
+        margin: 70px 0 30px 35px;
+        animation: dharmesh 2s linear infinite;
+        animation-direction: alternate;
+
+    }
+
+    @keyframes vivek
+    {
+        from{ left: 0; top: 0px; bottom: 0px; }
+        to{left: 90%; top: 500px;bottom: 300px;} 
+    }
+    @keyframes jay
+    {
+        from{left: 2%; top: 200px;}
+        to{left: 90%; top: 100px;}
+    }
+    @keyframes jaydeep
+    {
+        from{bottom: 0%; top: 100px; left: 100px;}
+        to{bottom: 30%; top: 500px; left:300px;}
+    }
+    @keyframes dharmesh
+    {
+        from{left: 0;top: 400px;}
+        to{left: 90%;top: 100px;}
+    }
+</style>
+
+
+
+
+</head>
+<body>
+    <div class="main">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+        <div class="e"></div>
+    </div>
+ 
+</body>
+</html>

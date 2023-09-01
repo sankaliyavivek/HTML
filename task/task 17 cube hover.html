@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a
+        {
+            height: 100px;
+            width: 100px;
+            margin: 100px auto;
+            position: relative;
+            display: block;
+            transform-style: preserve-3d;
+            text-align: center;
+            transition: 2s;
+            font-size: 70px;
+            line-height: 100px;
+        }
+        .front,.back,.up,.down,.right,.left
+        {
+             height: 100px;
+             width: 100px;
+             background: goldenrod;
+             position: absolute;
+             color: white;
+             transform: translateZ(50px);
+             border: 2px solid black;
+             font-weight: 70px;
+
+        }
+        .back
+        {
+            
+            background: gray;
+            color: powderblue;
+            transform: rotateX(90deg) translateZ(50px);
+        }
+        .up
+        {
+           
+           background: green;
+           transform: rotateX(180deg) translateZ(50px);
+       }
+       .down
+       {
+
+           background: red;
+           color: burlywood;
+           transform: rotateX(-90deg) translateZ(50px);
+       }
+          
+       
+       .right
+       {
+           background: rgb(201, 101,211);
+           color: black;
+           transform: rotateY(-90deg) translateZ(50px);   
+       }
+
+       .left
+       {
+           background: rgb(201, 101, 101);
+           color: rgb(66, 57, 255);
+           transform: rotateY(90deg) translateZ(50px);
+        }
+        a:hover
+        {
+            transform: rotateY(-360deg) rotateX(360deg);
+        }
+        
+    </style>
+</head>
+<body>
+    <a href="">
+        <div class="front">
+
+        </div>
+
+        <div class="back">
+            
+        </div>
+        
+        <div class="up">
+            
+        </div>
+        
+        <div class="down">
+            
+        </div>
+
+        <div class="right">
+
+        </div>
+        
+        <div class="left">
+
+        </div>
+    </a>
+</body>
+</html>

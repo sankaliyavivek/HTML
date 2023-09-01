@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .v
+        {
+            height: 100px;
+            width: 100px;
+            background-color: aquamarine;
+            display: block;
+            margin: 100px auto;
+            position: relative;
+            transition: 1s;
+            transform-style: preserve-3d;
+        }
+
+        .k
+        {
+            height: 100%;
+            width: 100%;
+            /* height: inherit;
+            width: inherit; */
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotateX(0deg) translateZ(50px);
+            backface-visibility: hidden;
+        }
+
+        .h
+        {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotateX(90deg) translateZ(50px);
+            backface-visibility: hidden;
+        }
+
+        .v:hover 
+        {
+            transform: rotateX(-90deg) translateZ(0px);
+        }
+    </style>
+</head>
+<body>
+    <div class="v">
+
+        <div class="k">
+            <img  src="download.jpeg" alt="" height="100%" width="100%">
+        </div>
+
+        <div class="h">
+            <img  src="download (1).jpeg" alt="" height="100%" width="100%">
+        </div>
+    </div>
+</body>
+</html>

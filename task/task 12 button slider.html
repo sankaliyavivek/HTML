@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<style>
+.x 
+{
+    height: 50px;
+    width: 150px;
+    background: blue;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    margin: 100px auto;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+
+}
+
+
+ .y
+    {  
+       height: 50px;
+       width: 150px;
+       background: lightcoral;
+       /* border-radius: 10px; */
+       position: absolute;
+       top: 0;
+       left: -100%;
+       z-index: -1;
+       transition: .8s;
+
+} 
+
+
+.x:hover .y
+{
+    left: 0;
+}
+
+
+
+</style>
+
+
+
+</head>
+<body>
+    
+<div class="x">
+        Hover Me
+         
+<div class="y">
+
+</div>
+
+
+
+</div>
+
+
+
+</body>
+</html>
