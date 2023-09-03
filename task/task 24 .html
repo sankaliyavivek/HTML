@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .l
+      {
+        height: 200px;
+        width: 200px;
+        background: conic-gradient(lightblue,blue);
+        border-radius: 50%;
+        margin: 100px auto;
+        position: relative;
+        animation: vivek 1s linear infinite;
+      }
+      .v
+      {
+        height: 180px;
+        width: 180px;
+        background: black;
+        border-radius: 50%; 
+    
+        position: absolute;
+        top: 12px;
+        left: 4px;
+        color: white;
+        text-align: center;
+        line-height: 180px;
+        transform: translate(589px,98px);
+    }
+    @keyframes vivek
+    {
+        from{transform: rotate(0deg);}
+        to{transform: rotate(360deg);}
+    }
+    </style>
+</head>
+<body>
+    <div class="l">
+       
+    </div>
+    <div class="v">
+        Loading
+     </div>
+</body>
+</html>
