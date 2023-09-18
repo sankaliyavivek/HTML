@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heart
+        {
+            height: 500px;
+            width: 600px;
+            display: flex;
+            margin: 100px auto;
+            justify-content: center;
+            align-items: center;
+            animation: vivek 1s linear infinite;
+
+        }
+        .red1,.red2
+        {
+            height: 400px;
+            width: 280px;
+            border-top-right-radius: 200px;
+            border-top-left-radius: 200px;
+            background: red;
+            transform: rotate(-46.5deg) translate(129px);
+        }
+        .red2
+        {
+             transform: rotate(46.5deg) translate(-133px);
+        }
+        @keyframes vivek
+        {
+            from{transform: scale(0.6);}
+            to{transform: scale(1);}
+        }
+    </style>
+</head>
+<body>
+    <div class="heart">
+        <div class="red1"></div>
+        <div class="red2"></div>
+    </div>
+</body>
+</html>

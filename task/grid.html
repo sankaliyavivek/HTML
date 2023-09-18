@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .main
+        {
+            background-color: yellow;
+            border: 2px solid red;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .one
+        {
+            /* height: 200px;
+            width: 100%; */
+            background: url(1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        img
+        {
+            object-fit: cover;
+        }
+
+        @media(max-width:800px)
+        {
+            .main{
+                grid-template-columns: 1fr 1fr;
+            }
+
+            /* .one
+            {
+                height: 300px;
+            } */
+        }
+
+        @media(max-width:500px)
+        {
+            .main
+            {
+                grid-template-columns: 1fr;
+            }
+
+            .one
+            {
+                height: 280px;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <div class="one1">
+            <img src="1.jpg" alt="" height="100%" width="100%">
+        </div>
+
+
+
+        <div class="one"></div>
+
+
+
+        <div class="one1">
+            <img src="1.jpg" alt="" height="100%" width="100%">
+        </div>
+
+
+
+        <div class="one"></div>
+
+
+
+
+    </div>
+</body>
+</html>

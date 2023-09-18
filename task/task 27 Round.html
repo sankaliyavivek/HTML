@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .one
+       {
+        height: 200px;
+        width: 200px;
+        background: conic-gradient(lightblue,blue);
+        margin: 100px auto;
+        /* border: 10px solid red; */
+        border-radius: 50%;
+        position: relative;
+        animation: vivek 2s linear infinite ;
+       }
+       .o1
+       {
+        height: 180px;
+        width: 180px;
+        background: black;
+        border-radius: 50%;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+
+       }
+       .o2
+       {
+        height: 12px ;
+        width: 12px;
+        background: blue;
+        position: absolute;
+        top: -10px;
+        left: 86px;
+        border-radius: 50%;
+       }
+       @keyframes vivek 
+       {
+        from{transform: rotate(0deg);}
+        to{transform: rotate(360deg);}
+       }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <div class="o1">
+            <div class="o2"></div>
+        </div>
+    </div>
+</body>
+</html>

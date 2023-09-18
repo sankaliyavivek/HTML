@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+      <style>
+        .main
+        {
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            border-radius: 50%;
+            margin: 100px auto;
+            position: relative;
+            
+        }
+
+        .main::after
+        {
+            
+            content: "";
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: bhuro 1s linear infinite;
+        }
+
+        .main:hover::after 
+        {
+            transform: scale(1.5);
+            opacity: 0;
+            transition: 1s;
+
+        }
+
+        @keyframes bhuro
+        {
+            100%
+            { transform: scale(1.5);
+            opacity: 0;
+            transition: 1s;
+            }
+        }
+      </style>
+
+
+</head>
+<body>
+
+    <div class="main">
+
+    </div>
+    
+</body>
+</html>

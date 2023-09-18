@@ -1,0 +1,155 @@
+*
+{
+    box-sizing: border-box;
+     /* border: 1px solid; */
+}
+body
+{
+    margin: 0;
+    padding: 0;
+
+}
+.main
+{
+    /* border: 1px solid blue; */
+    /* height: 600px; */
+    padding: 10px 50px 10px 50px;
+}
+.jaydep
+{
+    /* border: 1px solid red; */
+}
+.nav li
+{
+    font-size: 30px;
+    display: inline;
+    /* flex-wrap: wrap; */
+    /* width: 25%; */
+}
+.nav a{
+  text-decoration: none;
+  color: black;   
+}
+
+.nav
+{
+    text-align: center;
+    word-spacing: 190px;
+}
+.box
+{
+    /* border: 1px solid green; */
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    row-gap: 40px;
+    justify-content: space-evenly;
+}
+.bimg
+{
+    /* height: 200px; */
+    position: relative;
+    /* width: 200px; */
+    border: 1px solid pink;
+}
+
+.diver
+{
+    width: 24%;
+    padding: 5px;
+    /* border: 2px solid maroon; */
+}
+.img2
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(-180deg);
+    transition: 2s;
+    backface-visibility: hidden;
+
+}
+
+.bimg:hover .img2
+{
+    transform: rotateY(0deg);
+}
+.img1
+{
+    backface-visibility: hidden;
+    transition: 2s;
+    transform: rotateY(0deg);
+}
+.bimg:hover .img1
+{
+    transform: rotateY(180deg);
+}
+.diver
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+.diver a
+{
+
+   color: black;
+}
+.diver button
+{
+    font-size: 15px;
+    padding: 10px;
+    background-color: aquamarine;
+}
+.new
+{
+    /* height: 20px; */
+    /* width: 50px; */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: coral;
+}
+.add
+{
+    /* height: 40px; */
+    width: 100%;
+    background: black;
+    color: white;
+    /* text-align: center; */
+    line-height: 40px;
+    /* align-items: center; */
+    /* margin-left: 40px; */
+    /* padding: 8px; */
+    position: absolute;
+    top: 0px;
+  transition: 1s;
+  visibility: hidden;
+
+}
+
+.diver:hover .add
+{
+  transform: translate(0,284px);
+  visibility: visible;
+  background-color: aqua;
+  color: black;
+}
+
+
+@media(max-width:500px)
+{
+    .diver
+    {
+        width: 100%;
+    }
+
+    .diver:hover .add
+    {
+        transform: translate(0px,330px);
+    }
+
+
+}

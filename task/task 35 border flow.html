@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+
+
+          <style>
+            .main
+          {
+            height: 100px;
+            width: 100px;
+            background-color: coral;
+            margin: 100px auto;
+            border-radius: 50%;
+          }
+
+          .effact,.effact2
+          {
+            height: 100px;
+            width: 100px;
+            background-color: coral;
+            opacity: 1;
+            border-radius: 50%;
+            animation: vivek 2s infinite;
+          }
+
+          .main:hover .effact
+          {
+            transform: scale(1.5);
+            opacity: 0; 
+            transition: 1s;
+
+          }
+          .main:hover .effact2
+          {
+            transform: scale(1.8);
+            opacity: 0;
+            transition: 1s;
+          }
+
+
+          </style>
+
+
+</head>
+<body>
+    <div class="main">
+        <div class="effact">
+          <div class="effact2"></div>
+        </div>
+        
+
+    </div>
+</body>
+</html>

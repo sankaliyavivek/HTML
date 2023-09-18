@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .main
+        {
+            height: 200px;
+            width: 300px;
+            margin: 50px auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hover
+        {
+            height: 200px;
+            width: 300px;
+            transition: 1s;
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+
+        }
+        .first 
+        {
+            height: 400px;
+            width: 400px;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 50px;
+
+        }
+
+        .f
+        {
+            height: 400px;
+            width: 400px;
+            background: url(pexels-pixabay-268533.jpg);
+            background-size: 100% 100%;
+            transition: 1s;
+        }
+
+        .hover:hover
+        {
+            transform: scale(1.2);
+        }
+        .f:hover
+        {
+            transform: scale(1.2);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <div class="hover">
+
+             <img src="1.jpg" alt="" height="100%" width="100%">
+
+        </div>
+
+      
+
+    </div>
+
+    <div class="first">
+            <div class="f"></div>
+    </div>
+</body>
+</html>

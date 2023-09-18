@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main
+        {
+            /* height: 400px; */
+            /* background: green; */
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr 2fr;
+            padding: 20px;
+            gap: 10px;
+
+        }
+        .one1
+        {
+            /* height: 100% */
+            /* width: 100%;/ */
+            background: url(1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+             
+        }
+        img
+        {
+            object-fit: cover;
+        }
+        @media(max-width:500px)
+        {
+            .main
+            {
+               grid-template-columns: 1fr;
+            }
+
+            .one1
+            {
+                height: 200px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="one1"></div>
+
+        <div class="one">
+            <img src="2.jpg" alt="" height="100%" width="100%">
+        </div>
+
+        <div class="one1"></div>
+
+        <div class="one">
+            <img src="4.jpg" alt="" height="100%" width="100%">
+        </div>
+
+ 
+
+    </div>
+
+</body>
+</html>

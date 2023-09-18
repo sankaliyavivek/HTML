@@ -1,0 +1,47 @@
+body *
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.o2
+{
+    height: 850px;
+    padding: 30px;
+}
+.o3
+{
+    height: 800px;
+    width: 90%;
+    margin-left:60px;
+    padding: 10px;
+}
+ li
+{
+         word-spacing: 140px;
+        padding-left: 190px;
+        display: inline;
+        /* text-align: center; */
+        /* margin-left: 60px; */
+        /* text-align: center; */
+}
+
+.o4,.oo4
+{
+    display: flex;
+    justify-content: space-evenly;
+    height: 360px;
+}
+.oo4
+{
+    margin-top: 20px;
+}
+.o5,.o6
+{
+    width: 20%;
+}
