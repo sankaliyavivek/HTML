@@ -1,0 +1,145 @@
+@media(max-width:1200px)
+{
+    .cloth1{
+    grid-template-columns: 1fr 1fr;
+}
+
+}
+
+
+@media(max-width:1000px)
+{
+    .main 
+    {
+        display: none;
+    }
+
+    .ban{
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+
+    .street
+    {
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .ban{
+        grid-template-columns: 1fr 1fr;
+    }
+    .count{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* @media(max-width:900px)
+{
+    .street{
+        grid-template-columns: 1fr;
+    }
+} */
+
+
+@media(max-width:800px)
+{
+    .c
+    {
+        display: none;
+    }
+
+    .cat 
+    {
+        grid-template-columns: 80fr 20fr;
+    }
+
+    .fashion 
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .heart 
+    {
+        padding-top: 20px;
+        text-align: left;
+    }
+
+    .email,.icon
+    {
+        visibility: hidden;
+    }
+
+    .over{
+        grid-template-columns: 1fr;
+    }
+
+    .foot{
+        grid-template-columns: 1fr;
+    }
+    .inst,.doter,.cloth1
+    {
+        grid-template-columns: 1fr 1fr;
+
+    } 
+
+
+    .cloth p
+    {
+        padding: 0;
+    }
+
+    .para
+    {
+        padding: 100px;
+    }
+
+    .para1
+    {
+        background-size: 100% 100%;
+    }
+
+    
+
+}
+
+
+@media(max-width:500px)
+{
+    .ban{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .street
+    {
+        grid-template-columns: 1fr;
+    }
+    .inst,
+.cloth1,
+.doter,
+.banner2,
+.slider
+
+    {
+        grid-template-columns: 1fr;
+
+    }
+
+    .ph 
+    {
+        width: 100%;
+    }
+
+    .pho1
+    {
+        width: 100%;
+    }
+
+
+    .pho2
+    {
+        display: none;
+    }
+
+
+
+    
+}

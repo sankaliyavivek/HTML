@@ -1,0 +1,839 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* start  */
+.nav
+{
+    display: flex;
+    background: gray;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name
+{
+    font-size: 40px;
+    font-style: italic;
+    padding-left: 30px;
+}
+
+.list li
+{
+ display: inline;
+ padding: 20px;
+ position: relative;
+ border-radius: 50%;
+}
+
+.list li::after
+{
+    content: "";
+    height: 4px;
+    width: 0px;
+    background-color: coral;
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transition: .31s 
+}
+
+.list li::before
+{
+    content: "";
+    height: 4px;
+    width: 0px;
+    background-color: coral;
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transition: .31s;
+}
+
+.list li:hover::after
+{
+    width: 50%;
+}
+
+.list li:hover::before
+{
+   width: 50%;
+   left: -0%;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.icon
+{
+  padding: 20px;
+}
+
+.icon i
+{
+    padding-right: 10px;
+}
+
+.icon sup
+{
+    
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.page
+{
+    position: relative;
+    padding: 20px;
+
+}
+
+.p1
+{
+    width: 100px;
+    padding: 20px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    display: none;
+    z-index: 1;
+     
+
+}
+
+.page:hover .p1
+{
+    display: block;
+    background: black;
+    color: white;
+}
+
+/* end  */
+
+
+/* start  */
+
+.slider
+{
+    background-color: lemonchiffon;
+    padding-top: 10px;
+    gap: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+
+}
+
+
+.v
+{
+    width: 48%;
+}
+
+.first
+{
+    position: relative;
+  
+}
+
+
+.f1
+{
+
+    position: absolute;
+    top: 0px;
+    left: 0;
+    padding: 140px 0 0 20px;
+
+}
+
+
+.f1 h1,.para,#line
+{
+    padding: 10px;
+}
+
+
+.f1 a
+{
+    position: relative;
+}
+
+
+.f1 a::after
+{
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    border-radius: 50%;
+    background: coral;
+
+}
+
+.second
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color:white;
+    row-gap: 10px;
+}
+
+.man 
+{
+  /* height: 400px; */
+  width: 45%;
+  position: relative;
+}
+
+.man img
+{
+    object-fit: 100%;
+}
+
+.m
+{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px;
+}
+
+.m a
+{
+    position: relative;
+}
+
+.m a::after
+{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: coral;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+
+/* end  */
+
+
+
+/* start  */
+
+.new
+{
+    padding: 40px;
+}
+.navbar
+{
+    padding: 20px;
+}
+
+.product
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.product p,#n
+{
+    position: relative;
+}
+.product li
+{
+    display: inline;
+    padding: 20px;
+    padding-right: 20px;
+}
+
+.product p::after
+{
+    content: "";
+    height: 2px;
+    width: 40%;
+    background: coral;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+
+.product #n::after
+{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: coral;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 0; 
+} 
+
+.vivek
+{
+   display: flex;
+   padding: 50px 0px;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   row-gap: 10px;
+}
+
+.g1
+{
+    height: 350px;
+}
+
+.g1 img{
+    height: 100%;
+    width: 100;
+    object-fit: contain;
+}
+.div
+{
+    height: 450px;
+    width: 22%;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.g1
+{
+    position: relative;
+}
+
+.div .n 
+{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    background-color: green;
+    color: white;
+    /* padding: 5px 10px; */
+    font-size: 15px;
+}
+
+.div #of
+{
+    background-color: black;
+    color: white;
+}
+
+.div #sale
+{
+    background-color: red;
+    color: white;
+}
+.div i
+{
+    color: gold;
+    font-size: 10px;
+}
+
+.dharmesh
+{
+    position: relative;
+}
+
+.bhuro
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    left:0;
+    transition: 1s;
+    opacity: 0;
+
+}
+
+.dharmesh h5
+{
+    color: red;
+}
+
+.dharmesh del
+{
+    color: black;
+}
+
+.div:hover .bhuro
+{
+    top: -80px;
+    opacity: 1;
+}
+.bhuro i
+{
+    font-size: 20px;
+    color: black;
+    transition: 0.5s;
+}
+
+.fa-arrows-up-down
+{
+    transform: rotate(45deg);
+}
+
+.b 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px ;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0px 5px;     
+    cursor: pointer;
+}
+
+.b:hover
+{
+    background-color: red;
+}
+
+.bhuro i:hover
+{
+   transform: rotate(360deg);
+}
+
+/* end  */
+
+/* start  */
+
+.jack
+{
+    
+    background: url(../images/banner-1.jpg);
+    background-size: contain;
+    background-size:cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    align-items: center;
+    padding: 120px 0px;
+
+}
+
+.jack h1
+{
+    font-size: 50px;
+    font-family: cursive;
+}
+.jack a
+{
+    position: relative;
+}
+
+.jack a::after
+{
+    content: "";
+    height: 2px ;
+    width: 100%;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+
+
+/* end  */
+
+
+/* start  */
+
+.main
+{
+    padding: 50px 30px;
+}
+
+.third
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+
+}
+
+.trend
+{
+    width: 33.33%;
+    display: flex;
+    padding: 30px 0 0 45px;
+    flex-direction: column;
+}
+
+.trend #t
+{
+    position: relative;
+    font-size: 25px;
+}
+
+.trend #t::after
+{
+
+    content: "";
+    height: 2px ;
+    width: 20%;
+    background: coral;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+
+}
+
+.trend p 
+{
+    margin-bottom: 30px;
+    display: inline;
+}
+
+.chain
+{
+ display: flex;
+ padding-top: 30px;
+ 
+}
+
+.rvi
+{
+    height: 100px;
+    width: 100px;
+}
+
+.hot h5,h4
+{
+    padding: 10px;
+}
+
+
+.hot h4
+{
+    font-weight: bold;
+}
+
+
+.hot i
+{
+    margin-left: 10px;
+    font-size: 10px;
+    color: goldenrod;
+}
+
+
+/* end  */
+
+
+/* start  */
+
+.main1
+{
+    padding: 50px;
+}
+
+.main2
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.girl,.summer
+{
+    width: 50%;
+}
+
+.girl
+{
+    height: 400px;
+}
+
+.girl img
+{
+    object-fit: cover;
+}
+
+
+.summer 
+{
+    padding: 20px;
+    background: grey;
+    text-align: center;
+}
+
+
+.dis
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.round
+{
+    height: 200px;
+    width: 200px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: white;
+    line-height: 40px;
+}
+
+
+.round h1
+{
+ color: red;
+ font-style: italic;
+ 
+}
+
+
+.round *
+{
+    padding: 2px;
+    margin: 0;
+}
+
+.num
+{
+    padding: 30px;
+}
+
+.num h2 
+{
+    display: inline;
+    padding-right: 10px;
+}
+
+.num span
+{
+    padding: 2px;
+    font-size: 15px;
+}
+
+.num h4
+{
+    position: relative;
+}
+
+.num h4::after
+{
+    content: "";
+    height: 2px;
+    width: 35%;
+    background: coral;
+    position: absolute;
+    bottom: 0;
+    left: 33%;
+}
+
+
+/* end  */
+
+
+/* start  */
+
+
+.cont
+{
+    width: 100%;
+    padding: 50px;
+}
+
+.cont1
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.free
+{
+    width: 25%;
+    padding: 50px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.car
+{
+    height: 50px;
+    width: 30%;
+}
+
+.car i
+{
+    font-size: 50px;
+    color: red;
+}
+
+
+/* end  */
+
+/* start  */
+
+
+.inst
+{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+.inst1 img
+{
+    object-fit: cover;
+}
+
+
+.j
+{
+    width: 16.66%;
+    height: 350px;
+    position: relative;
+}
+
+
+.ins
+{
+    width: 100%;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    visibility: hidden;
+    opacity: .90;
+
+}
+
+.inst1:hover .ins,
+.inst2:hover .ins, 
+.inst3:hover .ins,
+.inst4:hover .ins, 
+.inst5:hover .ins, 
+.inst6:hover .ins
+{
+    visibility: visible;
+}
+
+.ins i
+{
+    font-size: 30px;
+} 
+
+
+/* end */
+
+
+/* start  */
+
+
+.footer
+{
+    padding: 20px;
+}
+
+
+.foot
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+
+.d
+{
+    width: 25%;
+    padding-left: 20px;
+}
+
+
+.ashion p
+{
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+
+.account p,.quick p
+{
+    line-height: 1.8;
+}
+
+
+
+.letter input
+{
+    height: 40px;
+    width: 70%;
+    border-radius: 25px;
+}
+
+.letter .sub1
+{
+    width: 30%;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.letter i
+{
+    padding: 10px;
+    background-color: #e1e1e1;
+    border-radius: 50%;
+}
+.letter *
+{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

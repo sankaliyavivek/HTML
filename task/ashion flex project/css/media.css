@@ -1,0 +1,69 @@
+@media(max-width:1000px)
+{
+  .first,
+  .second,
+  .girl,
+  .summer{
+    width: 100%;
+  }
+  .j{
+    width: 33%;
+  }
+
+  .div p{
+    /* left: 20%; */
+    /* top: 5%; */
+  }
+
+  .div,
+  .free,
+  .d{
+    width: 50%;
+  }
+
+
+
+
+}
+
+@media(max-width:800px)
+{
+
+.j{
+  width: 50%;
+}
+
+.trend 
+  {
+    width: 100%;
+  }
+
+}
+
+@media(max-width:500px)
+
+{
+
+  .nav .list
+  {
+    display: none;
+  }
+
+  .man,
+  .div,
+  .free,
+  .j,
+  .d{
+    width: 100%;
+  }
+
+  .trend 
+  {
+    width: 100%;
+  }
+
+ 
+}
+
+
+

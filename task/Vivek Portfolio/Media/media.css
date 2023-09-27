@@ -1,0 +1,63 @@
+@media(max-width:1200px)
+{
+    .imager,.about,.five,.futter
+    {
+        padding: 80px 10px 80px 10px ;
+    }
+
+    .lakhan,.fut
+    {
+        grid-template-columns: 1fr ;
+    }
+
+}
+
+
+
+
+
+@media(max-width:1000px)
+{
+    .fa-bars 
+    {
+        visibility: visible;
+        float: right;
+        padding-top: 40px;
+    }
+
+    .nil 
+    {
+        display: none;
+    }
+
+    .nav 
+    {
+        padding: 0px 20px;
+    }
+
+    .nav span 
+    {
+        font-size: 30px;
+    }
+
+    .second h1 
+    {
+        font-size: 30px;
+    }
+
+    .img 
+    {
+        grid-template-columns: 1fr 1fr ;
+    }
+
+  
+
+}
+
+@media(max-width:500px)
+{
+    .img 
+    {
+        grid-template-columns: 1fr ;
+    }
+}
