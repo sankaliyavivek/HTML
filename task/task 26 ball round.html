@@ -1,99 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .main
-    {
-        height: 500px;
-        width: 500px;
-        /* background: black; */
-        margin:20px auto;
-        position: relative;
-        animation: vivek .9s linear infinite alternate-reverse;
-    }
-    .a 
-    {
-        height: 250px;
-        width: 100%;
-        /* background: coral; */
-        display: flex;
-        gap: 20px;
-        position: absolute;
-    }
-    .a1,.a2,.v1,.v2
-    {
-        height: 50px;
-        width: 50px;
-        border-radius: 50%;
-        border: 4px solid red;
-        background: black;
-    
+        .main {
+            height: 500px;
+            width: 500px;
+            /* background: black; */
+            margin: 20px auto;
+            position: relative;
+            animation: vivek .9s linear infinite alternate-reverse;
+        }
 
-        
-    }
-    .a1
-    {
-      position: absolute;
-      top: 180px;
-      left: 160px;
-    }
-    .a2
-    {
-      position: absolute;
-      top: 180px;
-      left: 240px;
-    }
-    .v1
-    {
-       position: absolute;
-       top: 5px;
-       left: 160px;
-    }
-    .v2
-    {
-        position: absolute;
-        top: 5px;
-        left: 240px;
-    }
-    
-    .v
-    {
-        height: 250px;
-        width: 100%;
-        /* background: blue; */
-        display: flex;
-        gap: 20px;
-        position: absolute;
-        top: 250px;
+        .a {
+            height: 250px;
+            width: 100%;
+            /* background: coral; */
+            display: flex;
+            gap: 20px;
+            position: absolute;
+        }
+
+        .a1,
+        .a2,
+        .v1,
+        .v2 {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border: 4px solid red;
+            background: black;
 
 
-    }
 
-    @keyframes vivek
-    {
-        from{transform: scale(1) rotate(0deg);}
-        to{transform: scale(0) rotate(360deg);}
-    }
-    
+        }
+
+        .a1 {
+            position: absolute;
+            top: 180px;
+            left: 160px;
+        }
+
+        .a2 {
+            position: absolute;
+            top: 180px;
+            left: 240px;
+        }
+
+        .v1 {
+            position: absolute;
+            top: 5px;
+            left: 160px;
+        }
+
+        .v2 {
+            position: absolute;
+            top: 5px;
+            left: 240px;
+        }
+
+        .v {
+            height: 250px;
+            width: 100%;
+            /* background: blue; */
+            display: flex;
+            gap: 20px;
+            position: absolute;
+            top: 250px;
+
+
+        }
+
+        @keyframes vivek {
+            from {
+                transform: scale(1) rotate(0deg);
+            }
+
+            to {
+                transform: scale(0) rotate(360deg);
+            }
+        }
     </style>
 </head>
+
 <body>
     <div class="main">
-           <div class="a">
-              <div class="a1"></div>
-              <div class="a2"></div>
-             
-           </div>
-           
-           <div class="v">
+        <div class="a">
+            <div class="a1"></div>
+            <div class="a2"></div>
+
+        </div>
+
+        <div class="v">
             <div class="v1"></div>
             <div class="v2"></div>
-           
-         </div>
+
+        </div>
 
     </div>
 </body>
+
 </html>

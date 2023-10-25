@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+
+
+        .main {
+            display: grid;
+            grid-template-columns: 8fr 2fr;
+            background-color: black;
+            color: white;
+            margin: 0px 100px;
+            gap: 20px;
+        }
+
+
+        .main ul {
+            list-style-type: none;
+            text-align: right;
+            padding-right: 50px;
+        }
+
+        .main ul li {
+            padding: 5px 0px;
+        }
+
+        .m1,
+        .m2,
+        .m3,
+        .m4 {
+            display: grid;
+            gap: 20px;
+
+
+        }
+
+        .m1 {
+            grid-template-columns: 7fr 3fr;
+        }
+
+
+        .m2 {
+            grid-template-columns: 2fr 6fr 2fr;
+
+        }
+
+        .m3 {
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        .m4 {
+            grid-template-columns: 1fr 1fr 1fr;
+
+        }
+
+        .main img {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+
+
+        /* **************clip-path***********/
+
+        .buble {
+            margin: 100px;
+            background: url(images/images.jpeg);
+            background-size: cover;
+            color: white;
+            clip-path: polygon(0 0, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
+
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .buble .wel {
+            text-align: center;
+            padding: 100px 0px;
+        }
+
+        .wel h2 {
+            font-size: 50px;
+        }
+
+        .wel p {
+            font-size: 20px;
+        }
+
+        .nav ul li {
+
+            list-style-type: none;
+            display: inline;
+            padding: 0px 10px;
+
+        }
+
+
+        .nav ul li a {
+            color: white;
+        }
+
+
+
+        .nav span {
+            background-color: white;
+            padding: 5px 10px;
+            color: black;
+            font-weight: 999;
+
+        }
+
+        .nav p {
+            border: 1px solid;
+            padding: 5px 0px;
+            letter-spacing: 5px;
+            font-size: 20px;
+
+
+        }
+
+        .wel .lor {
+            font-size: 14px;
+            margin-bottom: 50px;
+        }
+
+        .wel a {
+            padding: 10px;
+            margin: 20px;
+
+            border: 1px solid;
+            color: white;
+        }
+
+        .wel a:hover {
+            background-color: orangered;
+        }
+
+        .icon {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0px 100px;
+
+        }
+
+        .icon1 {
+            width: 23%;
+            text-align: center;
+        }
+
+        .icon1 p {
+            font-size: 14px;
+        }
+
+        .icon1 i {
+            padding: 20px;
+            border: 1px solid red;
+            color: red;
+        }
+
+        .rotat {
+            transform: rotate(45deg);
+        }
+
+        .fa-voicemail {
+            transform: rotate(180deg);
+        }
+
+
+
+
+        /* ***bg*** */
+
+
+        .bg {
+            display: flex;
+            margin: 100px;
+        }
+
+        .contant {
+            display: flex;
+            width: 50%;
+            flex-direction: column;
+            border: 2px solid;
+            background-color: rgb(31, 29, 29);
+            color: white;
+        }
+
+        .contant h2 {
+            text-align: right;
+            padding-right: 50px;
+        }
+
+        .desing {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: right;
+            position: relative;
+            padding-right: 50px;
+        }
+
+        .ico {
+            position: absolute;
+            left: 88%;
+        }
+
+        .ico i {
+            padding: 10px;
+            border: 1px solid;
+            border-radius: 50%;
+            color: rgb(187, 35, 35);
+            background-color: white;
+            margin-left: 50px;
+        }
+
+
+
+        .bg .img {
+            background: url(images/pexels-todd-trapani-1535162.jpg);
+            background-size: 100% 100%;
+        }
+
+
+        .text h2 {
+            color: orangered;
+            font-size: 10px;
+        }
+
+        .text p {
+            font-size: 14px;
+            color: rgb(100, 87, 87);
+        }
+
+        /* ********************************************************************************** */
+
+        .diver {
+            height: 500px;
+            background: url(images/images\ \(1\).jpeg);
+            background-size: 100% 100%;
+            position: relative;
+            margin: 0px 100px;
+        }
+
+        .wave {
+            height: 460px;
+            background: url(images/wave.svg);
+            background-size: 100% 100%;
+            opacity: .7;
+        }
+
+        .lll {
+            color: white;
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .d1 {
+            height: 50px;
+            width: 50px;
+            border: 5px solid black;
+            border-radius: 50%;
+        }
+
+        .d1 img {
+            border-radius: 50%;
+        }
+
+        .s1 {
+            position: absolute;
+            top: 65%;
+            left: 15%;
+        }
+
+        .s2 {
+            position: absolute;
+            top: 60%;
+            left: 30%;
+        }
+
+        .s3 {
+            position: absolute;
+            top: 65%;
+            left: 45%;
+        }
+
+        .s4 {
+            position: absolute;
+            top: 70%;
+            left: 60%;
+        }
+
+        .s5 {
+            position: absolute;
+            top: 63%;
+            left: 74%;
+        }
+
+        /* *********************************************************************************************** */
+
+        .laster 
+        {
+            background-color: aliceblue;
+            margin: 0px 100px;
+        }
+
+        .gray
+        {
+            margin: 20px 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            row-gap: 20px;
+        }
+
+        .one
+        {
+            width:30%;
+        }
+
+        .x1 
+        {
+            background-color: gray;
+            color: white;
+            line-height: 150px;
+            text-align: center;
+        }
+
+        .x2 
+        {
+            padding: 0px 20px;
+        }
+
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <h2> Q.1 What are the benefits of using CSS ? </h2>
+
+    == >
+    <br><br>
+
+    css ki madadse app webside ke look ko chenge kar sakte he <br>
+    Easier to Maintain. CSS is easy to maintain due to less maintenance time. ... <br>
+    Consistent Design. ... <br>
+    Time-Saving. ... <br>
+    Better Device Compatibility. ... <br>
+
+
+    <h2> Q.2 What are the disadvantages of CSS ? </h2>
+
+    == >
+    <br><br>
+
+    Confusion due to many CSS levels. Beginners are more vulnerable to this issue. ... <br>
+    Cross-Browser Issues. Different browsers work differently. ... <br>
+    Security Issues. Security is important in today's world driven by technology and data. ... <br>
+    Extra Work for Developers. <br>
+
+
+    <h2> Q.3 What is the difference between CSS2 and CSs3 ? </h2>
+
+    == >
+    <br>
+
+    <p>The biggest difference between CSS2 and CSS3 is that CSS3 has been split into different sections, called modules.
+        Each of these modules is making its way through the W3C in various stages of the recommendation process.</p>
+
+    <p>If you compare this process to what happened with CSS2, where everything was submitted as a single document with
+        all the Cascading Style Sheets information within it, you begin to see the advantages of breaking the
+        recommendation up into smaller, individual pieces. Because each of the modules is being worked on individually,
+        developers enjoy a much wider range of browser support for CSS3 modules.</p>
+
+
+    <h2> Q.4 Name a few Css style components ? </h2>
+
+    == >
+    <br>
+
+    <p>The major components of a CSS style are as follows: Selecter: HTML element name, id name, class name. Property:
+        It's like an attribute such as background color,font-size,position,text-align,color,border etc. Values: Which
+        defines property or values allocate for properties.</p>
+
+    <p> 1) Selector: class name, id name or element name that is target </p>
+    <p> 2) Attribute: name of the attribute you want to style for example border, color,background, position etc.</p>
+    <p> 3) Value of Property: value that will be assigned to attribute.</p>
+    <p> 4) nline CSS also mixes (CSS) presentational code with HTML and content, making everything more difficult to
+        read and understand. Separating code and ...</p>
+    <p> 5) There are five possible values of the position property. If an item is positioned in any way other than
+        static , then the further properties top , bottom ...</p>
+
+
+    <h2> Q.5 What do tou understand by Css opacity ? </h2>
+
+    == >
+    <br>
+
+    <p>The opacity CSS property sets the opacity of an element. Opacity is the degree to which content behind an element
+        is hidden, and is the opposite of transparency . </p>
+
+    <p>opacity applies to the element as a whole, including its contents, even though the value is not inherited by
+        child elements. Thus, the element and its children all have the same opacity relative to the element's
+        background, even if they have different opacities relative to one another.</p>
+
+
+    <h2> Q.6 How can the background color of an element by chenged ? </h2>
+
+    == >
+    <br>
+
+    <p>To add background color in HTML, use the CSS background-color property. Set it to the color name or code you want
+        and place it inside a style attribute. Then add this style attribute to an HTML element, like a table, heading,
+        div, or span tag.</p>
+
+    <p>In HTML and CSS, background color is denoted by the background-color property. To add or change background color
+        in HTML, simply add inline CSS to your code.
+
+    <h2> Q.7 How can image repetition of the backup be controlled ? </h2>
+
+    == >
+    <br>
+
+    <p>This task can be achieved by using the background-repeat property that will help us to control the repetition of
+        the image.</p>
+    <p>The background-repeat property in CSS is used to repeat the background image both horizontally and vertically. It
+        also decides whether the background image will be repeated or not.</p>
+
+
+    <h2> Q.8 What is the use of the background-position property ? </h2>
+
+    == >
+    <br>
+
+    <p>background-position property ka use ham background img ko set karne ke liye karte he usme ham x-axix and y-axix
+        ke aadar par uska use karte hai background-position charo side se de sakte hai </p>
+
+    <p>The background-position property sets the starting position of a background image</p>
+
+    <p> A position defines an x/y coordinate, to place an item relative to the edges of an element's box. It can be
+        defined using one to four values. If two non-keyword values are used, the first value represents the horizontal
+        position and the second represents the vertical position. If only one value is specified, the second value is
+        assumed to be center. If three or four values are used, the length-percentage values are offsets for the
+        preceding keyword value.</p>
+
+
+    <h2> Q.9 Which property controls the image scroll in the background ? </h2>
+
+    == >
+    <br>
+
+    <p>The most usely property of the scroll in the background is the background-position fixed . </p>
+
+    <p>background-position fixed se app usko scroll par work karva sakte hai . </p>
+
+    <p>The background-attachment property specifies whether the background image will scroll along with the rest of the
+        elements on the page when the user slides the scroll-bar in the browser or whether the image will stay fixed to
+        the page. The background-attachment property can either be set to scroll or fixed . </p>
+
+
+    <h2> Q.10 Why should background and color be used as separate properties ? </h2>
+
+    == >
+    <br>
+
+    <p>Why background and color are the separate properties if they should always be set together? ... The background
+        property is a complex property in CSS, and if it is combined with color, the complexity will further increase .
+    </p>
+
+    <p>Color is an inherited property while the background is not. So this can make confusion further . </p>
+
+
+    <h2> Q.11 How to center block elements using CSS1 ? </h2>
+
+    == >
+    <br>
+
+    <p>block level element it's used to a very different position in css1 . </p>
+    <p>bloxk level element puri line ko block karta he . </p>
+    <p>To centrally align the block elements, we can simply make use of the tag . </p>
+    <p>All the elements within the tag will be centrally aligned . </p>
+
+
+    <h2> Q.12 How to maintain the CSS specificarions ? </h2>
+
+    == >
+    <br>
+
+    <p>The CSS specifications are maintained by the World Wide Web Consortium . </p>
+    <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written
+        in a markup language such as HTML or XML . </p>
+    <p>Separation of formatting and content also makes it feasible to present the same markup page in different styles
+        for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen
+        reader), and on Braille-based tactile devices. CSS also has rules for alternate formatting if the content is
+        accessed on a mobile device . </p>
+
+    <h2> Q.13 What are the ways to inregrate CSS as a web page ? </h2>
+
+    == >
+    <br>
+
+    <p>CSS may be added to HTML in three different ways. To style a single HTML element on the page, use Inline CSS in a
+        style attribute. By adding CSS to the head section of our HTML document, we can embed an internal stylesheet. We
+        can also connect to an external stylesheet that separates our CSS from our HTML . </p>
+
+    <p>three way's to create a inregrate css of the first is inline css,second is internal css and the thired and last
+        is external css you can creat any website of the thired Css . </p>
+
+    <h2> Q.14 What is embedded style sheets ? </h2>
+
+    == >
+    <br>
+
+    <p> Css ki style sheet ko add karvane ke liye link tag ka use karna padta he . link tag ki madadse ham external
+        style sheets ko link karvate he </p>
+
+    <p>external style sheet ko ham hade tag ke andar add karvate he . </p>
+
+    <p>iski madaddse ham font,color,icon,etc .... use kar sakte he yaa koi bhi font-family add karva sakte he </p>
+
+    <p> CSS stylesheets can be applied to an HTML document in 3 ways – inline styles, embedded stylesheet, and external
+        stylesheet.</p>
+
+    <h2> Q.15 What are the external style sheets ? </h2>
+
+    == >
+    <br>
+
+    <p>An external style sheet is a separate CSS file that can be accessed by creating a link within the head section of
+        the webpage. </p>
+
+    <p>Multiple webpages can use the same link to access the stylesheet . </p>
+
+    <p> The link to an external style sheet is placed within the head section of the page.</p>
+
+    <p>one change to the style sheet will change all linked pages . </p>
+
+    <p>you can create classes of styles that can then be used on many different HTML elements . </p>
+
+    <h2> Q.16 What are te advantages and disadvantages of using external style sheets ? </h2>
+
+    == >
+    <br>
+
+    <p><b>ADVANTAGE :</b> <br> The main advantage of external styling is that, when it is linked to by every page, it
+        ensures all pages are uniform in look and style creating a cohesive website. It also allows you to focus on the
+        other aspects of web design when creating the other pages as you don’t need to worry about the styling as that
+        is already done thanks to the external file. Additionally, it keeps your other pages code nice and tidy as all
+        the styling, which can often entail a lot of code, is separated onto a completely different file.</p>
+
+    <p><b>DISADVANTAGE :</b> <br> The main disadvantage of external CSS is that it does not allow for more specific
+        controlling of certain elements so, if you were to only use external styling, every single version of the same
+        element would look exactly the same. To combat this you could use internal styling, in-line styling or both in
+        addition to external. Additionally, the CSS file must be referenced by every page of the site, if it is not,
+        none of the formatting it sets out will be applied.
+    </p>
+
+    <h2> Q.17 What is the meaning of the CSS selector ? </h2>
+
+    == >
+    <br>
+
+    <p>A CSS selector is the first part of a CSS Rule. It is a pattern of elements and other terms that tell the browser
+        which HTML elements should be selected to have the CSS property values inside the rule applied to them. The
+        element or elements which are selected by the selector are referred to as the subject of the selector . </p>
+
+    <p>In other articles you may have met some different selectors, and learned that there are selectors that target the
+        document in different ways — for example by selecting an element such as h1, or a class such as special . </p>
+
+    <p>If you have more than one thing which uses the same CSS then the individual selectors can be combined into a
+        selector list so that the rule is applied to all of the individual selectors . </p>
+
+    <h2> Q.18 What are the media types allowed by CSS ? </h2>
+
+    == >
+    <br>
+
+    <p>One of the most important features of style sheets is that they specify how a document is to be presented on
+        different media: on the screen, on paper, with a speech synthesizer, with a braille device, etc . </p>
+
+    <p>Specify the target medium within the document language.</p>
+
+    <p>Some CSS properties are only designed for certain media. For example, the page-break-after property only applies
+        to paged media. However there are several properties that may be shared by different media types, but may
+        require different values for that property. The font-size property for example can be used for both screen and
+        print media, but possibly with different values.</p>
+
+    <p>A document usually needs a larger font on a computer screen as compared to the paper for better readability, also
+        sans-serif fonts are considered easier to read on the screen, while serif fonts are popular for printing.
+        Therefore it is necessary to specify that a style sheet, or a set of style rules, applies to certain media
+        types.</p>
+
+
+    <h2> Q.19 What is the rule set ? </h2>
+
+    == >
+    <br>
+
+    <p>A CSS rule set contains one or more selectors and one or more declarations.</p>
+
+    <p>The selector which in this example is h1 points to an HTML element.</p>
+
+    <p>The declaration(s), which in this example are color: blue and text-align: center style the element with a
+        property and value.</p>
+
+    <p>The key is property name & the value is property value, both the key and values are case-insensitive by default
+        in CSS.</p>
+
+    <p>The portion in which the curly braces & the properties are declared is declaration block.</p>
+
+    <p>The complete declaration is a ruleset.</p>
+
+    
+            <h2> Q.20 Create image gallery using display grid with responsive ? </h2>
+
+    <div class="main">
+
+        <div class="p8">
+
+            <div class="m1">
+
+                <div class="ph1"><img src="images/HD-wallpaper-man-surfing-on-ocean-waves-during-daytime.jpg" alt="">
+                </div>
+
+                <div class="ph2"> <img src="images/mount.jpg" alt=""></div>
+            </div>
+
+
+            <div class="m2">
+                <div class="ph1"><img src="images/girl.jpg" alt=""></div>
+                <div class="ph2"><img src="images/gras.jpg" alt=""></div>
+                <div class="ph2"><img src="images/two girl.jpg" alt=""></div>
+            </div>
+
+
+            <div class="m3">
+                <div class="ph1"><img src="images/gray girl.jpg" alt=""></div>
+                <div class="ph2"><img src="images/white.jpg" alt=""></div>
+            </div>
+
+
+            <div class="m4">
+                <div class="ph1"><img src="images/mirar bilidg.jpg" alt=""></div>
+                <div class="ph2"><img src="images/sager.jpg" alt=""></div>
+                <div class="ph2"><img src="images/bilding.jpg" alt=""></div>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="p2">
+
+
+            <h2>SHUTER</h2>
+
+            <ul>
+                <li>HOME</li>
+                <li>PHOTOS</li>
+                <li>BIO</li>
+                <li>BLOG</li>
+                <li>CONTACT</li>
+                
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+
+
+            </ul>
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- ****clip=-path******** -->
+
+
+
+
+            <h2> Q.21 Create below example with the help of clip path ? </h2>
+ 
+
+
+    <div class="buble">
+
+        <div class="nav">
+
+            <p><span>L</span>ogo</p>
+
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">PORTFOLIO</a></li>
+                <li><a href="">PRICING</a></li>
+                <li><a href="">TEAM</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+
+
+        </div>
+
+
+
+        <div class="wel">
+            <p>our clieats are our first priority</p>
+            <h2>WELCOME TO SKY</h2>
+
+            <P class="lor"> Atque quia incidunt maiores laboriosam similique, nostrum eaque ipsum distinctio molestias, ipsa voluptatibus optio at odit labore, sit nobis aliquid sint assumenda praesentium dolorem sed! Ab corporis esse tempora, delectus veniam aliquam sit quae excepturi, similique magni, repudiandae est voluptatibus pariatur reprehenderit in nostrum? Laboriosam earum doloribus eos soluta porro rem?</P>
+
+            <a href=""> GET STARTED NOW</a>
+            <a href=""> LORN MORE</a>
+
+        </div>
+
+    </div>
+
+    <div class="icon">
+
+        <div class="icon1">
+            <div class="rotat"><i class="fa-solid fa-circle-dot"></i></div>
+
+            <h2>SLEEK DESING</h2>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet architecto ad blanditiis voluptates
+                officia reiciendis accusantium iusto nisi placeat? Magnam!</P>
+
+        </div>
+
+        <div class="icon1">
+            <i class="fa-regular fa-heart"></i>
+            <h2>CLEAN CODE</h2>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet architecto ad blanditiis voluptates
+                officia reiciendis accusantium iusto nisi placeat? Magnam!</P>
+
+        </div>
+
+        <div class="icon1">
+            <i class="fa-solid fa-lightbulb"></i>
+            <h2>CRIATIVE IDEAS</h2>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet architecto ad blanditiis voluptates
+                officia reiciendis accusantium iusto nisi placeat? Magnam!</P>
+
+        </div>
+
+        <div class="icon1">
+            <i class="fa-solid fa-droplet"></i>
+            <h2>FREE SUPPORT</h2>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet architecto ad blanditiis voluptates
+                officia reiciendis accusantium iusto nisi placeat? Magnam!</P>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- *****bg**** -->
+
+
+  
+        <h2> Q.22 Multiple background one side bg-color other side contain image as bg ? </h2>
+   
+
+
+    <div class="bg">
+
+        <div class="contant">
+
+            <h2>OUR SERVICES</h2>
+
+            <div class="desing">
+
+                <div class="text">
+                    <h2>WEB DISING </h2>
+                    <p>Repudiandae, suscipit dolor adipisci sint optio unde perferendis, nisi vel voluptas doloremque animi, corporis velit commodi vitae laboriosam? Atque unde iure omnis quo? Esse iure harum voluptatem ratione cumque quidem fugit explicabo molestias sint quis enim nulla, minima atque. Unde reiciendis rem tempore debitis rerum atque molestias, libero quidem aliquid officia neque.</p>
+                </div>
+
+                <div class="ico">
+
+                    <i class="fa-solid fa-computer"></i>
+
+                </div>
+
+            </div>
+
+
+            <!-- ** -->
+
+
+            <div class="desing">
+
+                <div class="text">
+                    <h2>PRINT DESING</h2>
+                    <p>consequuntur dignissimos rerum fugiat dolore dolorem eius cumque, est mollitia tempora eos! Placeat, possimus labore perferendis adipisci fuga ipsam quis error reiciendis quos soluta quisquam sapiente aspernatur obcaecati quasi harum nostrum vero doloremque consequuntur impedit.p>
+                </div>
+
+                <div class="ico">
+
+                    <i class="fa-solid fa-copy"></i>
+
+                </div>
+
+            </div>
+
+            <!-- ** -->
+
+            <div class="desing">
+
+                <div class="text">
+                    <h2>PHOTOGRAPHY</h2>
+                    <p>exercitationem consequatur facere laborum commodi incidunt quidem inventore totam qui reiciendis harum est. Voluptates iste in error provident quidem? Omnis mollitia sed dolore.</p>
+                </div>
+
+                <div class="ico">
+
+                    <i class="fa-solid fa-camera-retro"></i>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="contant img"></div>
+
+    </div>
+
+    <!-- *****************************************************23****************************************************************** -->
+
+    <h2> Q.23 Create below example using css waves genrerator ? </h2>
+
+    <div class="diver">
+
+        <div class="lll">
+            <h1>our team </h1>
+            <p>meet the certilize team. shere your thouts with there . </p>
+        </div>
+
+        <div class="wave">
+
+            <div class="d1 s1">
+                <img src="images/s1.jpeg" alt="" height="100%"
+                    width="100%">
+            </div>
+
+            <div class="d1 s2">
+                <img src="images/s2.jpeg" alt="" height="100%" width="100%">
+            </div>
+
+            <div class="d1 s3">
+                <img src="images/s3.jpg" alt="" height="100%" width="100%">
+            </div>
+
+            <div class="d1 s4">
+                <img src="images/s4.y3eGwbcLkQtDhkCEsLKu" alt="" height="100%" width="100%">
+            </div>
+
+            <div class="d1 s5">
+                <img src="images/s5.jpeg" alt="" height="100%" width="100%">
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- ********************************************************************************************************************* -->
+
+    <h2> * Creat Layouts : </h2>
+
+    <div class="laster">
+
+        <div class="gray">
+
+            <div class="one">
+
+                <div class="x1">
+
+                    <h2>Thumbnail</h2>
+
+                </div>
+
+                <div class="x2">
+
+                    This is a wider card with supporting test below as a natural lead in ta additional content. This content is alittle bit longer . <br>
+
+                    <button>View</button>
+                    <button>Edit</button>
+                    <span style="float: right;">part of six</span>
+
+
+                </div>
+
+
+            </div>
+
+
+            <!-- *************************************** 2 ********************************* -->
+
+            <div class="one">
+
+                <div class="x1">
+
+                    <h2>Thumbnail</h2>
+
+                </div>
+
+                <div class="x2">
+
+                    This is a wider card with supporting test below as a natural lead in ta additional content. This content is alittle bit longer . <br>
+
+                    <button>View</button>
+                    <button>Edit</button>
+                    <span style="float: right;">part of six</span>
+
+
+                </div>
+
+
+            </div>
+
+
+        <!-- *************************************** 3 ***************************************  -->
+
+
+            <div class="one">
+
+                <div class="x1">
+
+                    <h2>Thumbnail</h2>
+
+                </div>
+
+                <div class="x2">
+
+                    This is a wider card with supporting test below as a natural lead in ta additional content. This content is alittle bit longer . <br>
+
+                    <button>View</button>
+                    <button>Edit</button>
+                    <span style="float: right;">part of six</span>
+
+
+                </div>
+
+
+            </div>
+
+        <!-- *********************************************** 4 ***************************************** -->
+
+       
+            <div class="one">
+
+                <div class="x1">
+
+                    <h2>Thumbnail</h2>
+
+                </div>
+
+                <div class="x2">
+
+                    This is a wider card with supporting test below as a natural lead in ta additional content. This content is alittle bit longer . <br>
+
+                    <button>View</button>
+                    <button>Edit</button>
+                    <span style="float: right;">part of six</span>
+
+
+                </div>
+
+
+            </div>
+
+
+        <!-- ******************************************************** 5 ******************************************* -->
+
+
+            <div class="one">
+
+                <div class="x1">
+
+                    <h2>Thumbnail</h2>
+
+                </div>
+
+                <div class="x2">
+
+                    This is a wider card with supporting test below as a natural lead in ta additional content. This content is alittle bit longer . <br>
+
+                    <button>View</button>
+                    <button>Edit</button>
+                    <span style="float: right;">part of six</span>
+
+
+                </div>
+
+
+            </div>
+
+        <!-- *************************************************************** 6 ************************************************** -->
+
+       
+
+            <div class="one">
+
+                <div class="x1">
+
+                    <h2>Thumbnail</h2>
+
+                </div>
+
+                <div class="x2">
+
+                    This is a wider card with supporting test below as a natural lead in ta additional content. This content is alittle bit longer . <br>
+
+                    <button>View</button>
+                    <button>Edit</button>
+                    <span style="float: right;">part of six</span>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
