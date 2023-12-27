@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .p_tag {
+            font-size: 25px;
+            background-color: yellow;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            line-height: 100px;
+            padding: 0px 10px;
+        }
+
+        .main * {
+            border: 3px solid;
+            padding: 35px;
+            display: block;
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+    <h2>Q 1) What is jQuery ?</h2>
+
+    ==>
+    <br>
+    <p>jQuery is a basic javascript library</p>
+
+    <p>it's devloper by The jQuery Team</p>
+
+    <p>it's releas on 26 August 2006</p>
+
+    <p>jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event
+        handling, CSS animations, and Ajax.</p>
+
+    <hr>
+    <hr>
+
+    <h2>Q 2) How to Apply CSS Using JQuery, How to Add Class and Remove Class in Jquery, JQuery Animation?</h2>
+
+    ==>
+    <br>
+    <ul>
+        <li>
+            <p><b>How to Add Class and Remove Class in Jquery ?</b></p>
+        </li>
+    </ul>
+
+    <p>you can apply the css using jQuery to use the css() method.</p>
+    <p>The css() method sets or returns one or more style properties for the selected elements.</p>
+
+   <b>Ex :</b>
+    <br>
+    <p id="hello">Hello</p>
+    <button style="color: white; background-color: black;">Aply CSS</button>
+    <script>
+
+        $("button").click(function () 
+        {
+            $("#hello").css("color", "blue")
+        }
+        )
+
+    </script>
+
+    <ul>
+        <li>
+            <p><b>How to Add Class and Remove Class in Jquery ?</b></p>
+        </li>
+    </ul>
+
+    <p>jab app ko class add karna hai to aap add() method ka use kar sakte he <b>OR</b> app ko class ko remove karna hai to
+        app remove() method ka use kar sakte he</p>
+        <p>* add() and remove() method se app css add or remove  kar sakte hai</p>
+
+    EX :
+    <br><br>
+
+    <p id="add">Mahadev</p>
+
+
+    <button id="btn1" style="background-color: black; color: white;">Add class</button>
+    <button id="btn2" style="background-color: black; color: white;">Remove class</button>
+
+    <script>
+
+        $("#btn1").click(function () {
+            $("#add").addClass("p_tag")
+        })
+
+        $("#btn2").click(function () {
+            $("#add").removeClass("p_tag")
+        })
+
+    </script>
+
+
+    <br>
+
+    <ul>
+        <li>
+            <p><b>JQuery Animation ?</b></p>
+        </li>
+    </ul>
+
+    <p>animate() method se app kisi bhi element ko css yaa or koi bhi value de sakte he or remove bhi kar sakte he.</p>
+
+    <p>The animate() method performs a custom animation of a set of CSS properties.</p>
+
+    <p>This method changes an element from one state to another with CSS styles. The CSS property value is changed
+        gradually, to create an animated effect.</p>
+
+    <p>Only numeric values can be animated. String values cannot be animated, except for the strings "show", "hide" and
+        "toggle". These values allow hiding and showing the animated element.</p>
+
+
+    <hr>
+    <hr>
+
+
+    <h2>Q 3) How to create slider with animation ?</h2>
+
+    ==>
+    <br>
+
+    <p>If you want to make sure your visitors take notice of what you’ve created as well as the messaging contained
+        within it, you need to give them a reason to. A sliced-and-diced slider animation effect they won’t find
+        anywhere else is a sure-fire way to do that.</p>
+
+    <p>In this tutorial, you’ll learn how to use Slider Revolution’s Website Intro Slider template to easily build a
+        hero slider of your own with an impossible-to-miss Slicey effect.</p>
+
+    <ul style="color: green;">
+        <li>Come up with a strategy for the slider.</li> <br>
+        <li>Update the background image in each slide.</li> <br>
+        <li>Update the text layers in each slide.</li> <br>
+        <li>Edit the button text and design in each slide.</li> <br>
+        <li>Edit the slider navigation.</li>
+    </ul>
+
+    <hr>
+    <hr>
+
+    <h2>Q 4) Event bubbling tickling example ?</h2>
+
+    ==>
+    <br>
+
+    <p>is event me perent ke thuru work karna hota he .</p>
+    <p>is me perent ke alawa sabhi perent ke sath matbab ki grand-perent,great-grand-perent ase work krana hota he </p>
+    <p>In event bubbling, the event is first captured and handled by the innermost element and then propagated to outer
+        elements.</p>
+    <p><b>Event bubbling</b> is a method of event propagation in the HTML DOM API when an event is in an element inside
+        another element, and both elements have registered a handle to that event. It is a process that starts with the
+        element that triggered the event and then bubbles up to the containing elements in the hierarchy.</p>
+
+    <p>Event bubbling it a metor of the mathod around the parent and child reletion about the span tag.</p>
+
+    <p>Event bubbling they are more than method
+    <ul style="color: red;">
+        <li>parents()</li>
+        <li>parent()</li>
+        <li>parents Until("any name of perent")</li>
+        <li>children()</li>
+        <li>find()</li>
+    </ul>
+    </p>
+
+    <p>in sabhi event se app perent ko call karvake child ko tag kar sakte he or call karva sakte he.</p>
+
+    <p>is se app  return value bhi de sakte he jese ki child ko call karvaya or perent ko tag karna etc.</p>
+
+
+    <div class="main">
+        <div class="great_gp"> Great-GrandFather
+            <div class="gp"> GrandFather
+                <ul class="papa"> Father
+                    <li class="mother"> Mother
+                        <span>CHILD 1</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        // $(".gp").children().css("color","red")
+        $(".main").children().css("background","blue")
+        $(".great_gp").children().css("background","gray")
+        $(".papa").children().css("background","green")
+
+    </script>
+
+
+</body>
+
+</html>
